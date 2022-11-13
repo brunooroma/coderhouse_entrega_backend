@@ -33,16 +33,30 @@ router.post("/:cartId/productos", async (req, res) => {
   res.send({ success: true, cart: updatedCart });
 });
 
-router.delete('/:cartId', async (req, res) => {
-    try {
-      const {cartId} = req.params; 
-  
-      await CartDao.deleteById(Number(cartId))
-      return res.send({success: true})
-    } catch (error) {
-      console.log(error)
-      return res.send({error: 'no se pudo eliminar el carrito'})
-    }
-  })
+router.delete("/:cartId", async (req, res) => {
+  try {
+    const { cartId } = req.params;
+
+    await CartDao.deleteById(Number(cartId));
+    return res.send({ success: true });
+  } catch (error) {
+    console.log(error);
+    return res.send({ error: "no se pudo eliminar el carrito" });
+  }
+});
+
+router.get("/:cartId/productos", async (req, res) => {
+  const { cartId } = req.params;
+  const productosCart = await CartDao.getById(cartId);
+  return res.send(productosCart);
+});
+
+router.delete("/:cartId/productos/:id_prod", async (req, res) => {
+  const { cartId, id_prod } = req.params;
+  const totalCart = await CartDao.deleteProductFromCartById(cartId, Number(id_prod))
+
+  return res.send(totalCart)
+  ;
+});
 
 export { router as CartRouter };

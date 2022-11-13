@@ -1,1 +1,34 @@
-[]
+[
+   {
+      "timestamp": "11/13/2022 7:32:03 PM",
+      "productos": [
+         {
+            "timestamp": "11/1/2022 9:06:21 PM",
+            "nombre": "hola",
+            "descripcion": "hola",
+            "codigo": "hola",
+            "foto": "hola",
+            "precio": 100,
+            "stock": 2,
+            "id": 2
+         }
+      ],
+      "id": 1
+   },
+   {
+      "timestamp": "11/13/2022 8:15:54 PM",
+      "productos": [
+         {
+            "timestamp": "11/8/2022 7:53:14 PM",
+            "nombre": "asde",
+            "descripcion": "asde",
+            "codigo": "asde",
+            "foto": "asde",
+            "precio": 1000,
+            "stock": 50,
+            "id": 6
+         }
+      ],
+      "id": 2
+   }
+]
