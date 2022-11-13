@@ -1,0 +1,32 @@
+[
+   {
+      "timestamp": "11/8/2022 8:34:31 PM",
+      "message": {
+         "_original": {
+            "timestamp": "11/8/2022 8:34:31 PM",
+            "nombre": "A",
+            "descripcion": "asde",
+            "codigo": "asde",
+            "foto": "asdeASDASD",
+            "precio": 1000,
+            "stock": 50
+         },
+         "details": [
+            {
+               "message": "\"nombre\" length must be at least 3 characters long",
+               "path": [
+                  "nombre"
+               ],
+               "type": "string.min",
+               "context": {
+                  "limit": 3,
+                  "value": "A",
+                  "label": "nombre",
+                  "key": "nombre"
+               }
+            }
+         ]
+      },
+      "id": 1
+   }
+]

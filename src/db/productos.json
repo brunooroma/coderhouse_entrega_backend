@@ -1,0 +1,82 @@
+[
+   {
+      "timestamp": "11/1/2022 9:06:21 PM",
+      "nombre": "hola",
+      "descripcion": "hola",
+      "codigo": "hola",
+      "foto": "hola",
+      "precio": 100,
+      "stock": 2,
+      "id": 2
+   },
+   {
+      "timestamp": "11/1/2022 9:06:29 PM",
+      "nombre": "hola",
+      "descripcion": "hola",
+      "codigo": "hola",
+      "foto": "hola",
+      "precio": 100,
+      "stock": 2,
+      "id": 3
+   },
+   {
+      "timestamp": "11/8/2022 7:51:15 PM",
+      "nombre": "hasdla",
+      "descripcion": "asd",
+      "codigo": "asd",
+      "foto": "asd",
+      "precio": 100,
+      "stock": 2,
+      "id": 4
+   },
+   {
+      "timestamp": "11/8/2022 7:51:20 PM",
+      "nombre": "hasdla",
+      "descripcion": "asd",
+      "codigo": "asd",
+      "foto": "asd",
+      "precio": 100,
+      "stock": 2,
+      "id": 5
+   },
+   {
+      "timestamp": "11/8/2022 7:53:14 PM",
+      "nombre": "asde",
+      "descripcion": "asde",
+      "codigo": "asde",
+      "foto": "asde",
+      "precio": 1000,
+      "stock": 50,
+      "id": 6
+   },
+   {
+      "timestamp": "11/8/2022 7:53:52 PM",
+      "nombre": "asde",
+      "descripcion": "asde",
+      "codigo": "asde",
+      "foto": "asde",
+      "precio": 1000,
+      "stock": 50,
+      "id": 7
+   },
+   {
+      "timestamp": "11/8/2022 7:54:10 PM",
+      "nombre": "asde",
+      "descripcion": "asde",
+      "codigo": "asde",
+      "foto": "asde",
+      "precio": 1000,
+      "stock": 50,
+      "id": 8
+   },
+   {
+      "timestamp": "11/8/2022 8:34:01 PM",
+      "nombre": "asde",
+      "descripcion": "asde",
+      "codigo": "asde",
+      "foto": "asdeASDASD",
+      "precio": 1000,
+      "stock": 50,
+      "id": 9
+   }
+]
