@@ -110,28 +110,26 @@ class ContainerFilesystem {
   }
 
   async deleteProductFromCartById(cartId, id_prod) {
-    console.log(cartId, id_prod)
-    const elements = await this.getAll();
-    console.log(elements)
+    try {
+      const elements = await this.getAll();
 
-    const foundCartIndex = elements.findIndex(
-      (element) => element.id == cartId
-    );
-    console.log(foundCartIndex)
-    const listProducts = elements[foundCartIndex].productos
+      const foundCartIndex = elements.findIndex(
+        (element) => element.id == cartId
+      );
+      const listProducts = elements[foundCartIndex].productos;
 
-      const newListProducts = listProducts.filter((e) => e.id !== id_prod)
-      console.log(newListProducts)
+      const newListProducts = listProducts.filter((e) => e.id !== id_prod);
 
-      elements[foundCartIndex].productos = newListProducts
-
-      console.log(elements)
+      elements[foundCartIndex].productos = newListProducts;
 
       await fs.promises.writeFile(
         this.filePath,
         JSON.stringify(elements, null, 3)
       );
-    return
+      return;
+    } catch (error) {
+      console.log(error);
+    }
   }
 }
 

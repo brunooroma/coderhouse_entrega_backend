@@ -46,16 +46,26 @@ router.delete("/:cartId", async (req, res) => {
 });
 
 router.get("/:cartId/productos", async (req, res) => {
-  const { cartId } = req.params;
+  try {
+    const { cartId } = req.params;
   const productosCart = await CartDao.getById(cartId);
   return res.send(productosCart);
+  } catch (error) {
+    console.log(error);
+    return res.send({ error: "no se encontro el carrito" });
+  }
 });
 
 router.delete("/:cartId/productos/:id_prod", async (req, res) => {
-  const { cartId, id_prod } = req.params;
+  try {
+    const { cartId, id_prod } = req.params;
   const totalCart = await CartDao.deleteProductFromCartById(cartId, Number(id_prod))
 
   return res.send(totalCart)
+  } catch (error) {
+    console.log(error);
+    return res.send({ error: "no se pudo eliminar el producto" });
+  }
   ;
 });
 
